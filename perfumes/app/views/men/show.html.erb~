@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product name:</b>
+  <%= @man.Product_name %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <img src=" <%= @man.Image_url%>"/>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @man.Description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @man.Price %>
+</p>
+
+
+<%= link_to 'Edit', edit_man_path(@man) %> |
+<%= link_to 'Back', men_path %>

@@ -1,0 +1,29 @@
+<h1>Listing men</h1>
+
+<table>
+  <tr>
+    <th>Product name</th>
+    <th>Image url</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @men.each do |man| %>
+  <tr>
+    <td><%= man.Product_name %></td>
+    <td><%= image_tag(man.Image_url, :width=>75, :height=>75) %></td>
+    <td><%= man.Description %></td>
+    <td><%= man.Price %></td>
+    <td><%= link_to 'Show', man %></td>
+    <td><%= link_to 'Edit', edit_man_path(man) %></td>
+    <td><%= link_to 'Destroy', man, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Man', new_man_path %>
