@@ -1,5 +1,26 @@
 Perfumes::Application.routes.draw do
+  get "tweet/user_page"
+
+  get "home/index"
+
+  get "site/about"
+
+  get "site/contact"
+
+  get "site/brand"
+
+  resources :women
+
   resources :men
+
+  root :to => 'home#index'
+
+  match'/about'=>'site#about'
+  match'/brand'=>'site#brand'
+  match'/contact'=>'site#contact'
+  match'/index'=>'home#index'
+  match'/user_page'=>'tweet#user_page'
+  match '/user_tweet' => 'tweet#user_tweet'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

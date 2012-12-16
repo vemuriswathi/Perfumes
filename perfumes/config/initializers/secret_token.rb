@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Perfumes::Application.config.secret_token = '49466af2dcfbd881c041d71ac79716c82508c84046709b5d5ebd8f8496fce3dc13d641675c8b1965ea4617c1ee3a29af5227b8b712437b86c0787a670440a013'
+Perfumes::Application.config.secret_token = 'f17910620a7a04fb6121f30f687e4655783c31f5f9db02449d328c6c1d5f7fdf6a462ecb1503ec1d129bd34debb75baed0e08a3ebb0337be6c5be8705cd353bf'

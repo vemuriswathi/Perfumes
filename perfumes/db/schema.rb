@@ -11,12 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121207232023) do
+ActiveRecord::Schema.define(:version => 20121211184432) do
 
   create_table "men", :force => true do |t|
-    t.string   "product_name"
+    t.string   "Product_name"
     t.string   "Image_url"
     t.text     "Description"
+    t.decimal  "Price"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "tweets", :force => true do |t|
+    t.string   "tweet_content"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "women", :force => true do |t|
+    t.string   "Product_name"
+    t.string   "Image_url"
+    t.text     "Description"
+    t.decimal  "Price"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end

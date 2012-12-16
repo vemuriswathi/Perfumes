@@ -1,3 +1,5 @@
-class Woman < ActiveRecord::Base
-  attr_accessible :Description, :Image_url, :Price, :Product_name
+class Tweet < ActiveRecord::Base
+  validates :tweet_content, :length => { :minimum => 1, :maximum => 140, :message => 'Maximum characters 1024' }
+  
+  attr_accessible :tweet_content
 end

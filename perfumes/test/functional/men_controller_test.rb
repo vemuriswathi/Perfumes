@@ -18,7 +18,7 @@ class MenControllerTest < ActionController::TestCase
 
   test "should create man" do
     assert_difference('Man.count') do
-      post :create, man: { Description: @man.Description, Image_url: @man.Image_url, product_name: @man.product_name }
+      post :create, man: { Description: @man.Description, Image_url: @man.Image_url, Price: @man.Price, Product_name: @man.Product_name }
     end
 
     assert_redirected_to man_path(assigns(:man))
@@ -35,7 +35,7 @@ class MenControllerTest < ActionController::TestCase
   end
 
   test "should update man" do
-    put :update, id: @man, man: { Description: @man.Description, Image_url: @man.Image_url, product_name: @man.product_name }
+    put :update, id: @man, man: { Description: @man.Description, Image_url: @man.Image_url, Price: @man.Price, Product_name: @man.Product_name }
     assert_redirected_to man_path(assigns(:man))
   end
 

@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div id='header'>
            <!-- Header Image Displayes here -->
         </div>
@@ -14,37 +15,39 @@
            <!-- Header Image Displayes here -->
            <div id="navbar">
 			 <ul>
-			 <li><a href="/index.html">Home</a></li>
-			 <li><a href="/men">Men's</a></li>
-			 <li><a href="/women">Women's</a></li>
-			 <li><a href="/brand">Brands</a></li>
-			 <li><a href="/contact">Contact Us</a></li>
+			 <li><a href="/index.html">HOME</a></li>
+			 <li><a href="/about">ABOUT US</a></li>
+			 <li><a href="/men">MEN'S</a></li>
+			 <li><a href="/women">WOMEN'S</a></li>
+			 <li><a href="/brand">BRANDS</a></li>
+			 <li><a href="/contact">CONTACT US</a></li>
 			 
+			
 			</ul>
 		   </div>
         </div>
         <div id='container'>
             <div id='content'>
+		
 		<%= yield %>
             </div>
             <div id='first-column'>
-            	<p> Twitter
-               <a href="https://twitter.com/">
-               <img src="/assets/tweet.jpg" alt="HTML tutorial" width="32" height="32"></a></p>
-               </div>
-
-            	
-             
+            	<p><a href="/user_page"><img src="/assets/tweet.jpg" alt="" width="50" height="50"></a></p>
+ 		<h1>Christmas Offers</h1>
+		<p>fantastic offers for christmas</p>
+ 		<p>In all top brands</p>
+		<p>Hurry Up!</p>
+            	</div>
             </div>
         </div>
         <div id='footer'>
-            <h6 class="footertext">CopyRights Reserved</h6>
+            <h6 class="footertext">Copy Rights Reserved</h6>
         </div>
 
 
 
 
-<%= yield %>
+
 
 </body>
 </html>
